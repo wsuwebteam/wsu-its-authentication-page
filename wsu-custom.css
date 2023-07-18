@@ -1,0 +1,17 @@
+
+/** Set page background to light gray **/
+.wsu-wrapper-site {
+    background-color: #f9f9f9;
+}
+
+/** Remove default home/house icon **/
+.wsu-navigation-vertical .wsu-menu-collapse:not(.wsu-menu-collapse--style-context)>li:first-child a::before,
+.wsu-navigation-vertical .wsu-menu-collapse:not(.wsu-menu-collapse--style-context)>li:first-child a::before {
+    display: none;
+}
+
+@media screen and (max-width: 1260px) {
+    .wsu-header-utility-bar {
+        display: none;
+    }
+}
