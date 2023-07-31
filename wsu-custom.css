@@ -15,3 +15,16 @@
         display: none;
     }
 }
+
+/** Shrink Header **/
+.wsu-header-unit__banner {
+    min-height: 120px;
+}
+
+.wsu-logo-lockup {
+    font-size: 0.9rem;
+}
+
+.wsu-navigation-audience:not([class*=-audience--style-]) .wsu-navigation-audience__menu li a:hover {
+    text-decoration: underline;
+}
