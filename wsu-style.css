@@ -374,37 +374,29 @@ a.wsu-link--external::after {
     }
 
     .wsu-navigation-vertical {
-        top: 145px;
-        right: -280px;
-        left: auto;
-        padding-top: 60px;
-        z-index: 200;
-        border-left: 2px solid #e5e5e5;
-        border-top: 2px solid #e5e5e5;
+        display: table-row;
+        position: relative;
+        background-color: #ddd;
+        height: 45px;
     }
 
-    .wsu-navigation-vertical .wsu-menu {
-        position: absolute;
-        top: -110px;
-        left: -90px;
-        height: 110px;
-        width: 90px;
-        display: block;
+    .wsu-navigation-vertical ul {
+        text-align: right;
+        padding-left: 2px;
+        margin-right: 2px;
     }
 
-    .wsu-navigation-vertical:focus,
-    .wsu-navigation-vertical:focus-within,
-    .wsu-navigation-vertical:hover {
-        right: 0;
+    .wsu-navigation-vertical li {
+        display: inline-block;
     }
 
-    .wsu-navigation-vertical:focus .wsu-menu,
-    .wsu-navigation-vertical:focus-within .wsu-menu,
-    .wsu-navigation-vertical:hover .wsu-menu {
-        right: 0;
-        left: auto;
+    .wsu-navigation-vertical a {
+        border-bottom: none;
     }
 
+    .wsu-header-unit__inner::after {
+        display: none;
+    }
 
 }
 
