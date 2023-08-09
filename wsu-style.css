@@ -28,6 +28,17 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+.wsu-global-footer a:focus,
+.wsu-site-footer a:focus {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+.wsu-navigation-vertical a:focus {
+    outline: 2px solid #000;
+    outline-offset: 3px;
+}
+
 
 .wsu-skip-to-main {
     position: absolute;
@@ -140,6 +151,11 @@ body {
     margin-left: 0.5rem;
 }
 
+.wsu-utility_search:focus {
+    background-color: #000;
+    text-decoration: underline;
+}
+
 .wsu-utility_search::after {
     content: "\f140";
     font-family: wsu-icons;
@@ -155,6 +171,11 @@ body {
     font-weight: 700;
     -webkit-clip-path: polygon(100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%,0 0);
     clip-path: polygon(100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%,0 0);
+}
+
+.wsu-utility_give:focus {
+    background-color: #a60f2d;
+    text-decoration: underline;
 }
 
 .wsu-logo-lockup {
@@ -292,7 +313,7 @@ a.wsu-link--external::after {
 
 .wsu-navigation-vertical a {
     display: block;
-    padding: 0.6875rem 0.875rem 0.6875rem 1.125rem;
+    padding: 0.6875rem 2rem 0.6875rem 1.125rem;
     text-decoration: none;
     font-size: .875rem;
     color: #3f3f3f;
@@ -376,14 +397,17 @@ a.wsu-link--external::after {
     .wsu-navigation-vertical {
         display: table-row;
         position: relative;
-        background-color: #ddd;
+        
         height: 45px;
     }
 
     .wsu-navigation-vertical ul {
-        text-align: right;
+        text-align: left;
         padding-left: 2px;
         margin-right: 2px;
+        background-color: #eee;
+        border-bottom: 1px solid #ccc;
+        padding: 0.5rem;
     }
 
     .wsu-navigation-vertical li {
@@ -392,6 +416,12 @@ a.wsu-link--external::after {
 
     .wsu-navigation-vertical a {
         border-bottom: none;
+        padding: 0.25rem 1rem;
+        border-left: none !important;
+    }
+
+    .wsu-navigation-vertical a:hover {
+        text-decoration: underline;
     }
 
     .wsu-header-unit__inner::after {
@@ -440,7 +470,9 @@ a.wsu-link--external::after {
         display: none;
     }
     
-
+    .wsu-navigation-vertical ul {
+        text-align: center;
+    }
 
 }
 
