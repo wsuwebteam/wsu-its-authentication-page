@@ -34,10 +34,6 @@ body {
     outline-offset: 3px;
 }
 
-.wsu-navigation-vertical a:focus {
-    outline: 2px solid #000;
-    outline-offset: 3px;
-}
 
 
 .wsu-skip-to-main {
@@ -255,78 +251,23 @@ a.wsu-link--external::after {
     padding: 0 1rem 0 0;
 }
 
-
-.wsu-site-footer__inner,
-.wsu-global-footer__inner,
-.wsu-site-content {
-    margin-left: 280px;
-}
-
 .wsu-site-content {
     box-sizing: border-box;
     padding: 2rem 2rem 3rem;
 }
 
-.wsu-navigation-vertical {
-    padding-top: 220px;
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left:0;
-    width: 280px;
-    height: auto;
-    border-right: 1px solid #e5e5e5;
-    background-color: #fff;
-    z-index: 50;
-}
 
-.wsu-navigation-vertical ul {
-    border-top: 1px solid #e5e5e5;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
 
-.wsu-navigation-vertical li {
-    margin: 0;
-    padding: 0;
-}
 
-.wsu-navigation-vertical button {
-    display: none;
-    font-size: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
 
-.wsu-navigation-vertical button::before {
-    content: "\f12a";
-    font-family: wsu-icons;
-    font-size: 1.125rem;
-    font-weight: 500;
-    height: 110px;
-    line-height: 110px;
-    display: block;
-}
 
-.wsu-navigation-vertical a {
-    display: block;
-    padding: 0.6875rem 2rem 0.6875rem 1.125rem;
-    text-decoration: none;
-    font-size: .875rem;
-    color: #3f3f3f;
-    font-weight: 600;
-    border-bottom: 1px solid #e5e5e5;
-    border-left: 5px solid transparent;
-}
 
-.wsu-navigation-vertical a:focus,
-.wsu-navigation-vertical a:hover {
-    border-left: 5px solid #595959;
-    background-color: #eee;
-}
+
+
+
+
+
+
 
 
 .wsu-global-footer,
@@ -379,9 +320,7 @@ a.wsu-link--external::after {
 
 @media screen and (max-width: 1260px ) {
 
-    .wsu-utility {
-        display: none;
-    }
+    
 
     .wsu-site-footer__inner,
     .wsu-global-footer__inner,
@@ -394,39 +333,6 @@ a.wsu-link--external::after {
         width: 70px;
     }
 
-    .wsu-navigation-vertical {
-        display: table-row;
-        position: relative;
-        
-        height: 45px;
-    }
-
-    .wsu-navigation-vertical ul {
-        text-align: left;
-        padding-left: 2px;
-        margin-right: 2px;
-        background-color: #eee;
-        border-bottom: 1px solid #ccc;
-        padding: 0.5rem;
-    }
-
-    .wsu-navigation-vertical li {
-        display: inline-block;
-    }
-
-    .wsu-navigation-vertical a {
-        border-bottom: none;
-        padding: 0.25rem 1rem;
-        border-left: none !important;
-    }
-
-    .wsu-navigation-vertical a:hover {
-        text-decoration: underline;
-    }
-
-    .wsu-header-unit__inner::after {
-        display: none;
-    }
 
 }
 
@@ -469,10 +375,11 @@ a.wsu-link--external::after {
     .wsu-site-footer .wsu-coug-head {
         display: none;
     }
-    
-    .wsu-navigation-vertical ul {
-        text-align: center;
+
+    .wsu-utility {
+        display: none;
     }
+    
 
 }
 
